@@ -109,8 +109,47 @@ SELECT ->
         WHERE marks > 80;
 
 
-
+SELECT *
+FROM students
+WHERE course = 'CSE'
+AND marks > 80;
     
+SELECT *
+FROM students
+WHERE course = 'CSE'
+OR course = 'IT';
+
+SELECT *
+FROM students
+ORDER BY marks DESC;
+
+SELECT *
+FROM students
+ORDER BY marks ASC;
+
+
+--->SORTING multiple columns 
+
+SELECT *
+FROM students
+ORDER BY course ASC, marks DESC;
+
+-> sort courses aplhabetically , within each course , put the highest marks first 
+
+LIMIT ->
+SELECT * FROM student 
+ORDER BY marks DESC
+LIMIT 3;
+
+-- shows only top 3
+
+
+-------genral order for queries----------
+SELECT
+FROM
+WHERE
+ORDER BY
+LIMIT
 
 
 
